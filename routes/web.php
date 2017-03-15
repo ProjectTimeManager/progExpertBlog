@@ -20,3 +20,8 @@ Route::get('/Admin/blog', function () {
 	Session::put('page','Blog');
     return view('admin.Blog.indexBlog');
 });
+
+Route::get('/Admin/blog/addNew', function () {
+	Session::put('page','Add New Blog');
+    return view('admin.Blog.addBlog');
+});

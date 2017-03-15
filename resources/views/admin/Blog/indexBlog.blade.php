@@ -12,14 +12,14 @@
         @include ('layouts.admin.topbar')
         <div style="padding:30px; ">
                 <div class="col-lg-12">
-                    <div class="col-lg-6 col-sm-12 text-center"><a href="" class="btn btn-fill btn-warning">Add Upcoming Article</a></div>
-                    <div class="col-lg-6 col-sm-12 text-center"><a href="" class="btn btn-fill btn-info">Add Live Article</a></div>
+                    <div class="col-lg-12 col-sm-12 text-center"><a href="/Admin/blog/addNew" class="btn btn-fill btn-info"> <span><i class="pe-7s-plus"></i></span> Add New Article</a> </div>
+                    <!-- <div class="col-lg-6 col-sm-12 text-center"><a href="" class="btn btn-fill btn-info">Add Live Article</a></div> -->
                 </div>  
         </div>
         <hr/>
         <div class="col-lg-12">
             <div class="text-center">
-                <h3>Scheduled Articles</h3>
+                <h3><u>Scheduled Articles</u></h3>
             </div>
         </div>
         <div class="content">
@@ -35,21 +35,17 @@
                           <table id="datatablesFutureBlogs" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
                             <thead>
                               <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
+                                <th>Live date</th>
+                                <th width="20%">Title</th>
+                                <th>Short Description</th>
                                 <th class="disabled-sorting text-right">Actions</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td>Timothy Mooney</td>
-                                <td>Office Manager</td>
-                                <td>London</td>
-                                <td>37</td>
-                                <td>2008/12/11</td>
+                                <td>2011/04/25</td>
+                                <td>Tiger Nixon System Architect System Architect</td>
+                                <td>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</td>
                                 <td class="text-right">
                                   <a href="datatables.net.html#" class="btn btn-simple btn-info btn-icon like"><i class="fa fa-heart"></i></a>
                                   <a href="datatables.net.html#" class="btn btn-simple btn-warning btn-icon edit"><i class="fa fa-edit"></i></a>
@@ -69,7 +65,7 @@
 
         <div class="col-lg-12">
             <div class="text-center">
-                <h3>Live Articles</h3>
+                <h3><u>Live Articles</u></h3>
             </div>
         </div>
         <div class="content">
@@ -85,33 +81,17 @@
                           <table id="datatablesLiveBlog" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
                             <thead>
                               <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
+                                <th width="20%"><u>Title</u></th>
+                                <th>Short Description</th>
+                                <th>Created date</th>
                                 <th class="disabled-sorting text-right">Actions</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
+                                <td>Tiger Nixon System Architect System Architect</td>
+                                <td>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</td>
                                 <td>2011/04/25</td>
-                                <td class="text-right">
-                                  <a href="datatables.net.html#" class="btn btn-simple btn-info btn-icon like"><i class="fa fa-heart"></i></a>
-                                  <a href="datatables.net.html#" class="btn btn-simple btn-warning btn-icon edit"><i class="fa fa-edit"></i></a>
-                                  <a href="datatables.net.html#" class="btn btn-simple btn-danger btn-icon remove"><i class="fa fa-times"></i></a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Timothy Mooney</td>
-                                <td>Office Manager</td>
-                                <td>London</td>
-                                <td>37</td>
-                                <td>2008/12/11</td>
                                 <td class="text-right">
                                   <a href="datatables.net.html#" class="btn btn-simple btn-info btn-icon like"><i class="fa fa-heart"></i></a>
                                   <a href="datatables.net.html#" class="btn btn-simple btn-warning btn-icon edit"><i class="fa fa-edit"></i></a>

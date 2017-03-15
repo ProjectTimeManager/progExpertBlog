@@ -25,7 +25,7 @@
                 </div>
                 <div class="info">
                     <a data-toggle="collapse" href="validation.html#collapseExample" class="collapsed">
-                        Username
+                        {{Session::has('username') ? Session::get('username') : 'Username'}}
                         <b class="caret"></b>
                     </a>
                     <div class="collapse" id="collapseExample">
@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 
-                <li class="{{ Session::has('page') ? Session::get('page') == 'Blog' ? 'active' : '' : '' }}">
+                <li class="{{ Session::has('page') ? Session::get('page') == 'Blog' ? 'active' : Session::get('page') == 'Add New Blog' ? 'active' : '' : '' }}">
                     <a href="/Admin/blog">
                         <i class="pe-7s-note"></i>
                         <p>Blog Articles</p>
